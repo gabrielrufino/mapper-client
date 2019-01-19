@@ -22,7 +22,7 @@
               </div>
             </div>
 
-            <button class="button is-fullwidth is-primary">Login</button>
+            <button class="button is-fullwidth is-primary" @click="auth">Login</button>
           </form>
         </div>
       </div>
@@ -34,13 +34,15 @@
 <script>
 export default {
   name: 'login',
-  data: () => ({
-    username: null,
-    password: null
-  }),
+  data () {
+    return {
+      username: null,
+      password: null
+    }
+  },
   methods: {
-    auth: () => {
-      this.$http.post('/auth', {
+    auth () {
+      this.$http.post('http://localhost:3000/auth', {
         username: this.username,
         password: this.password
       })
