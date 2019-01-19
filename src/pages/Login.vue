@@ -1,8 +1,6 @@
 <template>
   <div>
 
-    <h1>Login</h1>
-
     <form>
       <div class="field">
         <label class="label">Username</label>
@@ -17,6 +15,8 @@
           <input class="input is-primary" type="password" placeholder="********" v-model="password">
         </div>
       </div>
+
+      <button class="button is-fullwidth is-primary">Login</button>
     </form>
 
   </div>
