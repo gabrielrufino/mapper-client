@@ -1,10 +1,16 @@
 <template>
   <div id="app">
+    <navbar/>
   </div>
 </template>
 
 <script>
+import Navbar from '@/components/Navbar'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    Navbar
+  }
 }
 </script>
