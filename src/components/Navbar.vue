@@ -20,8 +20,20 @@
         <div class="navbar-start">
           <a class="navbar-item" href="#">Home</a>
         </div>
-        <div class="navbar-end">
 
+        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">Foto</a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Profile
+              </a>
+              <a class="navbar-item">
+                Logout
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
