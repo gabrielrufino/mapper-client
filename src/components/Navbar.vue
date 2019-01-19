@@ -4,9 +4,9 @@
     <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <div class="navbar-brand">
-          <a class="navbar-item" href="#">
+          <router-link :to="{ name: 'home' }" class="navbar-item">
             <span><i class="fas fa-map-signs"></i> Mapper</span>
-          </a>
+          </router-link>
 
           <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
@@ -18,7 +18,8 @@
 
       <div class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" href="#">Home</a>
+          <router-link :to="{ name: 'home' }" class="navbar-item">Home</router-link>
+          <router-link :to="{ name: 'targets' }" class="navbar-item">Targets</router-link>
         </div>
 
         <div class="navbar-end">
