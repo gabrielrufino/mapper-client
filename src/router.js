@@ -6,10 +6,12 @@ import Targets from '@/pages/Targets'
 const routes = [
   {
     path: '/',
+    name: 'home',
     component: Home
   },
   {
     path: '/targets',
+    name: 'targets',
     component: Targets
   }
 ]
