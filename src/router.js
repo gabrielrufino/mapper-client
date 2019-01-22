@@ -7,7 +7,7 @@ import Target from '@/pages/Target'
 
 const routes = [
   {
-    path: '/mapper/',
+    path: '/mapper',
     component: Home,
     children: [
       {
@@ -23,7 +23,7 @@ const routes = [
     ]
   },
   {
-    path: '/:target',
+    path: '/:target?',
     component: Target
   }
 ]
