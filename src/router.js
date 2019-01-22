@@ -6,19 +6,24 @@ import Targets from '@/pages/Targets'
 
 const routes = [
   {
-    path: '/login',
-    name: 'login',
-    component: Login
+    path: '/mapper/',
+    component: Home,
+    children: [
+      {
+        path: '/login',
+        name: 'login',
+        component: Login
+      },
+      {
+        path: '/targets',
+        name: 'targets',
+        component: Targets
+      }
+    ]
   },
   {
-    path: '/',
-    name: 'home',
-    component: Home
-  },
-  {
-    path: '/targets',
-    name: 'targets',
-    component: Targets
+    path: '/:target',
+    component: "<h1>Nothing for while</h1>"
   }
 ]
 
