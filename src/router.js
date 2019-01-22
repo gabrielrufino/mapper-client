@@ -1,7 +1,10 @@
 import VueRouter from 'vue-router'
 
-import Mapper from '@/Mapper'
+// 
+import Access from '@/Access'
 import Login from '@/pages/Login'
+
+import Mapper from '@/Mapper'
 import Home from '@/pages/Home'
 import Targets from '@/pages/Targets'
 import Target from '@/pages/Target'
@@ -11,13 +14,19 @@ const mode = 'history'
 const routes = [
   {
     path: '/mapper',
-    component: Mapper,
+    component: Access,
     children: [
       {
         path: 'login',
         name: 'login',
         component: Login
-      },
+      }
+    ]
+  },
+  {
+    path: '/mapper',
+    component: Mapper,
+    children: [
       {
         path: '',
         name: 'home',
