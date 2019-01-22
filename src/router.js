@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 // Access components
 import Access from '@/Access'
 import Login from '@/pages/Login'
+import Register from '@/pages/Register'
 
 // Mapper components
 import Mapper from '@/Mapper'
@@ -21,6 +22,11 @@ const routes = [
         path: 'login',
         name: 'login',
         component: Login
+      },
+      {
+        path: 'register',
+        name: 'register',
+        component: Register
       }
     ]
   },
