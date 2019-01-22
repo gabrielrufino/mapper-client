@@ -8,12 +8,16 @@ import Target from '@/pages/Target'
 const routes = [
   {
     path: '/mapper',
-    component: Home,
     children: [
       {
         path: '/login',
         name: 'login',
         component: Login
+      },
+      {
+        path: '',
+        name: 'home',
+        component: Home
       },
       {
         path: '/targets',
