@@ -5,6 +5,8 @@ import Home from '@/pages/Home'
 import Targets from '@/pages/Targets'
 import Target from '@/pages/Target'
 
+const mode = 'history'
+
 const routes = [
   {
     path: '/mapper',
@@ -33,6 +35,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  mode,
   routes
 })
 
