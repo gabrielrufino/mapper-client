@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Login from '@/pages/Login'
 import Home from '@/pages/Home'
 import Targets from '@/pages/Targets'
+import Target from '@/pages/Target'
 
 const routes = [
   {
@@ -23,7 +24,7 @@ const routes = [
   },
   {
     path: '/:target',
-    component: "<h1>Nothing for while</h1>"
+    component: Target
   }
 ]
 
