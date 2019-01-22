@@ -10,6 +10,7 @@ import Mapper from '@/Mapper'
 import Home from '@/pages/Home'
 import Targets from '@/pages/Targets'
 import Target from '@/pages/Target'
+import NotFound from '@/pages/NotFound'
 
 const mode = 'history'
 
@@ -43,6 +44,11 @@ const routes = [
         path: 'targets',
         name: 'targets',
         component: Targets
+      },
+      {
+        path: '*',
+        name: 'not-found',
+        component: NotFound
       }
     ]
   },
