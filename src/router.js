@@ -12,7 +12,7 @@ const routes = [
     path: '/mapper',
     children: [
       {
-        path: '/login',
+        path: 'login',
         name: 'login',
         component: Login
       },
@@ -22,7 +22,7 @@ const routes = [
         component: Home
       },
       {
-        path: '/targets',
+        path: 'targets',
         name: 'targets',
         component: Targets
       }
