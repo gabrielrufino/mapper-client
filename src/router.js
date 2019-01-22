@@ -1,9 +1,10 @@
 import VueRouter from 'vue-router'
 
-// 
+// Access components
 import Access from '@/Access'
 import Login from '@/pages/Login'
 
+// Mapper components
 import Mapper from '@/Mapper'
 import Home from '@/pages/Home'
 import Targets from '@/pages/Targets'
